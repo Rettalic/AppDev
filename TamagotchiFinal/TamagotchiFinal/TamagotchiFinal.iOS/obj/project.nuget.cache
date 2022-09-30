@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "7oQ82buDvBz2mGAeHCaKd/x+UrkqMJCaB1+6UzBVDJIXVRmOtknOqMIiJ2ITMPmGP79FUKf1sHaUD/StxggFyA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ybroe\\source\\repos\\TamagotchiFinal\\TamagotchiFinal\\TamagotchiFinal.iOS\\TamagotchiFinal.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ybroe\\.nuget\\packages\\fody\\6.6.3\\fody.6.6.3.nupkg.sha512",
+    "C:\\Users\\ybroe\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ybroe\\.nuget\\packages\\propertychanged.fody\\4.0.3\\propertychanged.fody.4.0.3.nupkg.sha512",
+    "C:\\Users\\ybroe\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\ybroe\\.nuget\\packages\\xam.plugins.forms.progressring\\0.1.2\\xam.plugins.forms.progressring.0.1.2.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

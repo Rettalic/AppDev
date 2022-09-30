@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TamagotchiFinal.Bedroom1"
+             BackgroundImageSource="Bed.png"
+             xmlns:control="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin" >
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Dit is de slaapkamer!"/>
+            <Grid>
+                <ImageButton  Source="GoBed.png" Clicked="ButtonTired" WidthRequest="130"></ImageButton>
+
+
+                <control:ProgressRing Grid.Row="1" Grid.Column="0" HeightRequest="45" RingBaseColor="Gray" RingProgressColor="Green"     RingThickness="10" Scale="1.4"  WidthRequest="45"  Progress="{Binding Hunger,  Mode=OneWay}"></control:ProgressRing>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

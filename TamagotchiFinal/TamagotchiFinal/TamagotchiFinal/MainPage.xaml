@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TamagotchiFinal.MainPage"
+             BackgroundImageSource="Background.png"
+             xmlns:control="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin"
+             >
+
+    <StackLayout Spacing="10" Padding="10" >
+        <Image Source="Welcome.png" Scale="0.9"></Image>
+      
+        <!--<ProgressBar ProgressColor="Green"  ScaleY="3"  Progress="{Binding player.Hunger,      Mode=OneWay}"></ProgressBar>-->
+        <!--<ProgressBar ProgressColor="Red"    ScaleY="3"  Progress="{Binding player.Thirst,      Mode=OneWay}"></ProgressBar>-->
+        <!--<ProgressBar ProgressColor="Blue"   ScaleY="3"  Progress="{Binding player.Boredom,     Mode=OneWay}"></ProgressBar>-->
+        <!--<ProgressBar ProgressColor="Purple" ScaleY="3"  Progress="{Binding player.Programming, Mode=OneWay}"></ProgressBar>-->
+        <!--<ProgressBar ProgressColor="Pink"   ScaleY="3"  Progress="{Binding player.Tired,       Mode=OneWay}"></ProgressBar>-->
+
+        <Grid Padding="10 ">
+            <Image Grid.Row="0" Grid.Column="0" Source="Hunger.png" Scale="0.75" ></Image>
+            <Image Grid.Row="0" Grid.Column="1" Source="Thirst.png" Scale="0.65"></Image>
+            <Image Grid.Row="0" Grid.Column="2" Source="Bore.png" Scale="0.85"></Image>
+            <Image Grid.Row="0" Grid.Column="3" Source="Programming.png" Scale="1.25" ></Image>
+            <Image Grid.Row="0" Grid.Column="4" Source="Tiredness.png" Scale="0.9" ></Image>
+            
+            <control:ProgressRing Grid.Row="1" Grid.Column="0" HeightRequest="45" RingBaseColor="Gray" RingProgressColor="Green"     RingThickness="10" Scale="1.4"  WidthRequest="45"  Progress="{Binding Hunger,     Mode=OneWay}"></control:ProgressRing>
+            <control:ProgressRing Grid.Row="1" Grid.Column="1" HeightRequest="45" RingBaseColor="Gray" RingProgressColor="Blue"      RingThickness="10" Scale="1.4"  WidthRequest="45"  Progress="{Binding Thirst,     Mode=OneWay}"></control:ProgressRing>
+            <control:ProgressRing Grid.Row="1" Grid.Column="2" HeightRequest="45" RingBaseColor="Gray" RingProgressColor="Beige"     RingThickness="10" Scale="1.4"  WidthRequest="45" Progress="{Binding Boredom,     Mode=OneWay}"></control:ProgressRing>
+            <control:ProgressRing Grid.Row="1" Grid.Column="3" HeightRequest="45" RingBaseColor="Gray" RingProgressColor="OrangeRed" RingThickness="10" Scale="1.4"  WidthRequest="45" Progress="{Binding Programming, Mode=OneWay}"></control:ProgressRing>
+            <control:ProgressRing Grid.Row="1" Grid.Column="4" HeightRequest="45" RingBaseColor="Gray" RingProgressColor="Orange"    RingThickness="10" Scale="1.4"  WidthRequest="45" Progress="{Binding Tired,       Mode=OneWay}"></control:ProgressRing>
+            
+            <Image Grid.Row="1" Grid.Column="0" Source="Cutlery.png" HeightRequest="10"></Image>
+            <Image Grid.Row="1" Grid.Column="1" Source="Cup.png" HeightRequest="10" Scale="0.9"></Image>
+            <Image Grid.Row="1" Grid.Column="2" Source="Bored.png" HeightRequest="10"></Image>
+            <Image Grid.Row="1" Grid.Column="3" Source="Screen.png" HeightRequest="10" Scale="0.75"></Image>
+            <Image Grid.Row="1" Grid.Column="4" Source="Tired.png" HeightRequest="10" Scale="0.9"></Image>
+        </Grid>
+        
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+            <Grid>
+                <Image Grid.Row="0" Source="CurrentMood.png" Scale="0.9"></Image>
+                <Image Grid.Row="1" Source="{Binding MoodImg, Mode=OneWay}" WidthRequest="100"></Image>
+            </Grid>
+        </StackLayout>
+        
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HeightRequest="80" WidthRequest="100" Margin="5" Spacing="1">
+            <Grid>
+                <ImageButton Grid.Row="3"  Grid.Column="0" Source="GoKRoom.png" Clicked="ButtonKitchen" WidthRequest="200"></ImageButton>
+                <ImageButton Grid.Row="3"  Grid.Column="1" Source="GoBRoom" Clicked="ButtonBedroom" WidthRequest="130" ></ImageButton>
+                
+                <ImageButton Grid.Row="2"  Grid.Column="0" Source="Games.png" Clicked="ButtonBoredom" WidthRequest="130" ></ImageButton>
+                <ImageButton Grid.Row="2"  Grid.Column="1" Source="Code.png" Clicked="ButtonProgramm" WidthRequest="130"></ImageButton>
+                <ImageButton Grid.Row="1"  Grid.Column="0" Source="Food.png" Clicked="ButtonHunger" WidthRequest="130"></ImageButton>
+                <ImageButton Grid.Row="1"  Grid.Column="1" Source="GoBed.png" Clicked="ButtonTired" WidthRequest="130"></ImageButton>
+                <ImageButton Grid.Row="0"  Grid.Column="0" Source="Drink.png" Clicked="ButtonThirst" WidthRequest="130"></ImageButton>
+
+
+            </Grid>
+        </StackLayout>
+
+
+    </StackLayout>
+
+ 
+
+</ContentPage> 
